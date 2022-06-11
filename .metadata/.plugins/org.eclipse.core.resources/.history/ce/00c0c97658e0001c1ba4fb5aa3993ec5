@@ -1,0 +1,27 @@
+package condicional;
+
+import java.util.Scanner;
+
+public class Registro {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String disciplina;
+		int quantidade, faltas;
+		double n1, n2, n3, n4, media;
+		
+		System.out.println("Digite a disciplina:");
+		disciplina = sc.next();
+		System.out.println("Informe a quantidade de aulas:");
+		quantidade = sc.nextInt();
+		System.out.println("Informe as quatro notas:");
+		n1 = sc.nextDouble();
+		n2 = sc.nextDouble();
+		n3 = sc.nextDouble();
+		n4 = sc.nextDouble();
+		System.out.println("Informe a quantidade de faltas:");
+		
+		sc.close();
+	}
+
+}

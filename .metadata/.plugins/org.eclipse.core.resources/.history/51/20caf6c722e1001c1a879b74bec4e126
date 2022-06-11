@@ -1,0 +1,23 @@
+package sequencial;
+
+import java.util.Scanner;
+
+public class Media {
+
+	public static void main(String[] args) {
+		
+		double n1, n2, n3;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o valor de N1:");
+		n1 = sc.nextDouble();
+		System.out.println("Informe o valor de N2:");
+		n2 = sc.nextDouble();
+		System.out.println("Informe o valor de N3:");
+		n3 = sc.nextDouble();
+		
+		sc.close();
+		
+	}
+
+}

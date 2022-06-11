@@ -1,0 +1,47 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class DesafioLogica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double preco = 0, precoI = 0, precoL = 0, somaC = 0, somaE = 0, somaV = 0;
+		int quantidade = 0, contador = 0;
+		char categoria;
+		
+		while(contador < 15 ) {
+			System.out.println("\n\nInsira o preço do produto: ");
+			preco = sc.nextDouble();
+			System.out.println("\nInsira a quantidade do produto: ");
+			quantidade = sc.nextInt();
+			System.out.println("\nInsira a categoria do produto (C, E, V): ");
+			categoria = sc.next().charAt(0);
+			categoria = Character.toUpperCase(categoria);
+			
+			if(categoria == 'C') {
+				somaC += preco*(1+37.41/100)*(1+30.00/100)*quantidade;
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+				System.out.printf("Com imposto: R$%.2f, com lucro: R$%.2f", preco*(1+37.41/100), preco*(1+37.41/100)*(1+30.00/100));
+			}else if(categoria == 'E'){
+				somaE += preco*quantidade;
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else if(categoria == 'V') {
+				somaV += preco*quantidade;
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else {
+				System.out.println("Categoria inválida! Deve ser C, E ou V.");
+			}
+			
+		}
+		System.out.printf("\nC: %.2f, E: %.2f, V: %.2f\n", somaC, somaE, somaV);
+		
+		sc.close();
+
+	}
+
+}

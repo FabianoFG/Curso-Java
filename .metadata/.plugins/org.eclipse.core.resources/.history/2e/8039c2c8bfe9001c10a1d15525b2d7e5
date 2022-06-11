@@ -1,0 +1,36 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class DesafioLogica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double preco;
+		int quantidade; int contador = 0;
+		char categoria;
+		
+		while(contador < 15 ) {
+			System.out.println("\nInsira o preço do produto: ");
+			preco = sc.nextDouble();
+			System.out.println("\nInsira a quantidade do produto: ");
+			quantidade = sc.nextInt();
+			System.out.println("\nInsira a categoria do produto (C, E, V): ");
+			categoria = sc.next().charAt(0);
+			categoria = Character.toUpperCase(categoria);
+			//System.out.println((categoria == 'C' || categoria == 'E' || categoria == 'V')? "ok" : "Categoria inválida");
+			if(categoria == 'C' || categoria == 'E' || categoria == 'V') {
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: %.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else{
+				
+			}
+			
+		}
+		
+		sc.close();
+
+	}
+
+}

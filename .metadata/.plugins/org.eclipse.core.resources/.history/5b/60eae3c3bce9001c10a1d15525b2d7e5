@@ -1,0 +1,32 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class DesafioLogica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double preco= 0;
+		int quantidade; int contador = 0;
+		char categoria;
+		
+		while(preco >=0 && contador < 15 ) {
+			System.out.println("Insira o preço do produto: ");
+			preco = sc.nextDouble();
+			System.out.println("Insira a quantidade do produto: ");
+			quantidade = sc.nextInt();
+			System.out.println("Insira a categoria do produto (C, M, V): ");
+			categoria = sc.next().charAt(0);
+			
+			contador++;
+			System.out.printf("Preço: %.2f\nQuantidade: %d\nCategoria: %s", preco, quantidade, categoria);
+			System.out.println("Aperte qualquer teclara para inserir novo produto, ou -1 para encerrar.");
+			
+		}
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package condicional;
+
+public class DiaSemana {
+
+	public static void main(String[] args) {
+		
+		int dia;
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+
+}

@@ -1,0 +1,16 @@
+package condicional;
+
+import java.util.Scanner;
+
+public class DiaSemana {
+
+	public static void main(String[] args) {
+		
+		int dia;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite um dia da semana (1 a 7): ");
+		
+	}
+
+}

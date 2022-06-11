@@ -1,0 +1,21 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class MediaAlunosFor {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double total = 0;
+		int contador;
+		
+		for(contador = 0; contador <= 9; contador++) {
+			
+		}
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package sequencial;
+
+public class Aumento1 {
+
+	public static void main(String[] args) {
+		double salarioBruto;
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

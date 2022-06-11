@@ -1,0 +1,10 @@
+package repeticao;
+
+public class Aumento {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

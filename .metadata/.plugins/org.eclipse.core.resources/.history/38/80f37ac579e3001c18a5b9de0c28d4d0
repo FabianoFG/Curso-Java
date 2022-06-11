@@ -1,0 +1,25 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class AreaTriangulo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int contador = 0;
+		double base, altura;		
+		
+		while(contador != -1) {
+			System.out.println("\nDigite a medida da base: ");
+			(sc.nextDouble() > 0) ? base = sc.nextDouble(); : System.out.println("\nValor inválido");
+			
+			System.out.println("\nDigite a medida da altura: ");
+			altura = sc.nextDouble();
+		}
+		
+		sc.close();
+
+	}
+
+}

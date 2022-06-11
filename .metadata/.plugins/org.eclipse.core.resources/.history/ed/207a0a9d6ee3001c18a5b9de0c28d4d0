@@ -1,0 +1,22 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class MediaAlunos {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		double total = 0;
+		int contador = 0;
+		
+		while(contador <= 9) {
+			System.out.printf("\nDigite a %dª nota: ", contador+1);
+		}
+		
+		sc.close();
+
+	}
+
+}

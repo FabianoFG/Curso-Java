@@ -1,0 +1,18 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class Aumento {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int ano, contador;
+		double percentual;
+		
+		
+		
+		sc.close();
+
+	}
+
+}

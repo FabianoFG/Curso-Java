@@ -1,0 +1,19 @@
+package repeticao;
+
+import java.util.Scanner;
+
+public class AreaTriangulo {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int contador;
+		double base, altura;		
+		
+		while()
+		
+		sc.close();
+
+	}
+
+}

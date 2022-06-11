@@ -1,0 +1,20 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class DesafioLogica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double preco;
+		int quantidade;
+		char categoria;
+		
+		System.out.println("Insira o preço do produto: ");
+		
+		sc.close();
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package condicional;
+
+public class ImpostoRenda {
+
+	public static void main(String[] args) {
+		
+		double renda;
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

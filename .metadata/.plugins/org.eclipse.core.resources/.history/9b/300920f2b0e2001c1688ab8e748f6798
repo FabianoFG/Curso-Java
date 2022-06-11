@@ -1,0 +1,25 @@
+package condicional;
+
+import java.util.Scanner;
+
+public class Calculadora {
+
+	public static void main(String[] args) {
+		
+		int opcao;
+		double num1, num2;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Informe o 1º valor: ");
+		num1 = sc.nextDouble();
+		System.out.println("Informe o 2º valor: ");
+		num2 = sc.nextDouble();
+		
+		System.out.println("\n\nCalculadora\n");
+		System.out.println("\n1. Soma, \n2. Subtração");
+		
+		sc.close();
+
+	}
+
+}

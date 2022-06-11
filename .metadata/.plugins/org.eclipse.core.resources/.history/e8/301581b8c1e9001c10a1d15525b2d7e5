@@ -1,0 +1,43 @@
+package desafio;
+
+import java.util.Scanner;
+
+public class DesafioLogica {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		double preco = 0, somaC = 0, somaE = 0, somaV = 0;
+		int quantidade = 0, contador = 0;
+		char categoria;
+		System.out.printf("%f %f %f", somaC, somaE, somaV);
+		while(contador < 15 ) {
+			System.out.println("\nInsira o preço do produto: ");
+			preco = sc.nextDouble();
+			System.out.println("\nInsira a quantidade do produto: ");
+			quantidade = sc.nextInt();
+			System.out.println("\nInsira a categoria do produto (C, E, V): ");
+			categoria = sc.next().charAt(0);
+			categoria = Character.toUpperCase(categoria);
+			
+			if(categoria == 'C') {
+				somaC += preco;
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else if(categoria == 'E'){
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else if(categoria == 'V') {
+				contador++;
+				System.out.printf("\nProduto %d\nPreço: R$%.2f\nQuantidade: %d\nCategoria: %s\n", contador, preco, quantidade, categoria);
+			}else {
+				System.out.println("Categoria inválida! Deve ser C, E ou V.");
+			}
+			
+		}
+		
+		sc.close();
+
+	}
+
+}

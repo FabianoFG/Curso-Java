@@ -1,0 +1,23 @@
+package condicional;
+
+import java.util.Scanner;
+
+public class ImpostoRenda {
+
+	public static void main(String[] args) {
+		
+		double renda;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor da renda: ");
+		renda = sc.nextDouble();
+		
+		if(renda < 1903.98){
+			System.out.printf("");
+		}
+		
+		sc.close();
+
+	}
+
+}
